@@ -1,0 +1,15 @@
+.navbar-nav .show>.nav-link {
+  color: rgb(255 255 255 / 90%);
+}
+.nav-link .nav-link:focus, .nav-link:hover {
+  color: rgb(255 255 255 / 90%);
+}
+.nav-link  {
+  color: #efb428 !important;
+}
+.content{
+  font-size: -webkit-xxx-large;
+}
+.gradient{
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
