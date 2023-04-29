@@ -17,9 +17,8 @@ function ContactUs() {
     const[msgg,setMsgg]=useState("")
 
 
+
 useEffect(() => {
-  if(boolState === true){
-   console.log("hi");
   var json ={
     name:name,
     age:age,
@@ -27,9 +26,10 @@ useEffect(() => {
     mobileNo:mobile,
 
 }
+  if(boolState === true){
 insertUser(json)
  }
-}, [boolState])
+}, [boolState,age,email,name,mobile])
 
 useEffect(() => {
   if(msgg !== "" && msgg !== undefined){
