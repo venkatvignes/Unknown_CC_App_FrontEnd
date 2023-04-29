@@ -70,7 +70,7 @@ useEffect(() => {
 
 const insertUser =  (json)=>{
   setBoolState(false)
-  fetch("https://unknowncc-backend.onrender.com/users/add", {
+  fetch("https://unknowncc-backend.onrender.com/functions/users/add", {
   method: "POST",
   body: JSON.stringify(json),
   headers: {

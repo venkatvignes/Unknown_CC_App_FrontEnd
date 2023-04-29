@@ -7,7 +7,7 @@ function Carosel() {
 console.log(users);
   useEffect(() => {
 
-    fetch("https://unknowncc-backend.onrender.com/users")
+    fetch("https://unknowncc-backend.onrender.com/functions/users")
     .then(response => {
       return response.json()
     })
