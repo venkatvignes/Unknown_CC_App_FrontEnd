@@ -7,7 +7,7 @@ function Carosel() {
 console.log(users);
   useEffect(() => {
 
-    fetch("http://localhost:5000/users")
+    fetch("https://unknowncc-backend.onrender.com/users")
     .then(response => {
       return response.json()
     })
