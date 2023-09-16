@@ -33,7 +33,6 @@ insertUser(json)
 
 useEffect(() => {
   if(msgg !== "" && msgg !== undefined){
-   console.log("hi");
    setShow(true)
   }
 
@@ -70,7 +69,7 @@ useEffect(() => {
 
 const insertUser =  (json)=>{
   setBoolState(false)
-  fetch("https://unknowncc-backend.onrender.com/functions/users/add", {
+  fetch("https://unknowncc-backend.onrender.com/users/add", {
   method: "POST",
   body: JSON.stringify(json),
   headers: {

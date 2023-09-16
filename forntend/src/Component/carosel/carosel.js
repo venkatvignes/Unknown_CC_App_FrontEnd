@@ -4,10 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Carosel() {
   const [users, setUsers] = useState([])
-console.log(users);
   useEffect(() => {
 
-    fetch("https://unknowncc-backend.onrender.com/functions/users")
+    fetch("https://unknowncc-backend.onrender.com/users")
     .then(response => {
       return response.json()
     })
@@ -25,9 +24,9 @@ console.log(users);
       {users?.map((e)=>e.img?.img?.map((e)=>{
         return(  
           <Carousel.Item>
-          <img
+          <img style={{height:"28em"}}
           className="d-block w-100"
-          src={`data:image/jpeg;base64,${e}`}  alt="First slide"
+          src={`${e}`}  alt="First slide"
         />
        
      
