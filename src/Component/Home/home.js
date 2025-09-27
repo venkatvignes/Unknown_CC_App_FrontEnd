@@ -3,10 +3,8 @@ import { Button, Col, Row } from "react-bootstrap";
 import rcbLogo from "../../Images/rcb-logo-new.jpeg";
 
 function home() {
-  const jsxValue = <div>Venkat</div>;
   return (
     <div>
-      <div>{jsxValue}</div>
       <Row className="m-0 gradient  fw-bold pt-3  " style={{ height: "78vh" }}>
         <Col className="p-0 mb-3 " xl="12">
           <Row className="content m-0">

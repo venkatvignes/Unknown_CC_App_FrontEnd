@@ -8,7 +8,6 @@ import TeamPlayers from "./Component/TeamPlayer/teamplayers";
 // import useSound from 'use-sound';
 
 function App() {
-  const jsxValue = <div>Venkat</div>;
   const [page, setPage] = useState("home");
   const setupPage = () => {
     if (page === "home") {
@@ -16,7 +15,6 @@ function App() {
     } else if (page === "Photos") {
       return (
         <>
-          <div>{jsxValue}</div>
           <Row className="m-0 justify-content-center">
             <Col xl="7">
               <Carosel />
